@@ -1,7 +1,5 @@
 <template>
-    <div class=header>
-       i am header 
-    </div>
+    <div class="tab"></div>
 </template>
 <style lang="stylus" scoped>
 
