@@ -1,16 +1,21 @@
 <template>
   <div id="app">
-      <div class="header">
-          i  am header
-      </div>
-      <div class="tab"> i am tab</div>
-      <div class="content"> i am content</div>
+      <header></header>
+      <tab></tab>
+      <content></content>
   </div>
 </template>
 
 <script>
+    import header from './components/header/Header';
+    import tab from './components/tab/Tab';
+    import content from './components/content/Content';
     export default {
-        components: {}
+        components: {
+            header,
+            tab,
+            content
+        }
     };
 </script>
 <style>
