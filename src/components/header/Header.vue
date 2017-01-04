@@ -3,8 +3,9 @@
        i am header 
     </div>
 </template>
-<style lang="stylus" rel="stylesheet/stylus" scoped>
+<style>
 
 </style>
-<script type="text/ecmascript-6">
+<script>
+    export default {};
 </script>

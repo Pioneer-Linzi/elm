@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <header></header>
+      <ele-header></ele-header>
       <tab></tab>
       <content></content>
   </div>
@@ -12,7 +12,7 @@
     import content from './components/content/Content';
     export default {
         components: {
-            header,
+            'ele-header': header,
             tab,
             content
         }
