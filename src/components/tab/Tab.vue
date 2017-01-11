@@ -1,10 +1,22 @@
 <template>
     <div class="tab">
-        tab
+        <div class="tab-item">商品</div>
+        <div class="tab-item">评价</div>
+        <div class="tab-item">商家</div>
     </div>
 </template>
-<style>
-
+<style scoped>
+    .tab {
+        display: flex;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    .tab .tab-item {
+        flex: 1;
+        text-align: center;
+    }
 </style>
 <script>
     export default {};
