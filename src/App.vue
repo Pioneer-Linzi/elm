@@ -2,7 +2,7 @@
   <div id="app">
       <ele-header></ele-header>
       <tab></tab>
-      <content></content>
+     <router-view></router-view>
   </div>
 </template>
 
@@ -22,7 +22,7 @@
     html {
         height: 100%;
     }
-    
+
     #app {
         width: 100%;
         height: 100%;
