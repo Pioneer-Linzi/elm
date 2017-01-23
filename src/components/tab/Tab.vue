@@ -1,8 +1,8 @@
 <template>
     <div class="tab">
-        <div class="tab-item">商品</div>
-        <div class="tab-item">评价</div>
-        <div class="tab-item">商家</div>
+        <div class="tab-item" v-link="{path: 'goods'}">商品</div>
+        <div class="tab-item" v-link="{path: 'ratings'}">评价</div>
+        <div class="tab-item" v-link="{path: 'seller'}">商家</div>
     </div>
 </template>
 <style scoped>

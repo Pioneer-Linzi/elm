@@ -1,7 +1,7 @@
 <template>
    <div class="content">
-       content
-       </div> 
+    this space is content
+   </div> 
 </template>
 <style>
 
@@ -9,3 +9,4 @@
 <script>
     export default {};
 </script>
+
