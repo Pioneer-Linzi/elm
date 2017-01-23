@@ -1,11 +1,11 @@
 <template>
     <div class="tab">
-        <div class="tab-item" v-link="{path: 'goods',activeClass:'active'}"><a v-link="{path: 'goods'}">商品</a></div>
-        <div class="tab-item"><a v-link="{path: 'ratings',ativeClass:'active'}">评价</a></div>
-        <div class="tab-item" ><a v-link="{path: 'seller',activeClass:'active'}">商家</a></div>
+        <div class="tab-item" v-link="{path: 'goods'}"><a v-link="{path: 'goods'}">商品</a></div>
+        <div class="tab-item"><a v-link="{path: 'ratings'}">评价</a></div>
+        <div class="tab-item" ><a v-link="{path: 'seller'}">商家</a></div>
     </div>
 </template>
-<style >
+<style scoped>
     .tab {
         display: flex;
         width: 100%;
@@ -21,14 +21,14 @@
         display:block;
         text-decoration:none;
         line-height:28px;
-        color:rgb(77,85,93);
+        font-color:rgb(77,85,93);
         font-size:14px;
     }
     .tab .tab-item a:active{
-        color:red;
+    font-color:red;
     }
-    .active{
-        color:rgb(240,20,20);
+    .linkActiveClass{
+    font-color:rgb(240,20,20);
     }
 </style>
 <script>
