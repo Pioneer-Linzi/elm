@@ -1,8 +1,8 @@
 <template>
     <div class="tab">
-        <div class="tab-item" v-link="{path: 'goods',activeClass:'active'}"><a v-link="{path: 'goods'}">商品</a></div>
-        <div class="tab-item"><a v-link="{path: 'ratings',ativeClass:'active'}">评价</a></div>
-        <div class="tab-item" ><a v-link="{path: 'seller',activeClass:'active'}">商家</a></div>
+        <div class="tab-item"><a v-link="{path: '/goods',activeClass:'active'}">商品</a></div>
+        <div class="tab-item"><a v-link="{path: '/ratings',activeClass:'active'}">评价</a></div>
+        <div class="tab-item"><a v-link="{path: '/seller',activeClass:'active'}">商家</a></div>
     </div>
 </template>
 <style >
@@ -24,11 +24,8 @@
         color:rgb(77,85,93);
         font-size:14px;
     }
-    .tab .tab-item a:active{
-        color:red;
-    }
     .active{
-        color:rgb(240,20,20);
+        color:rgb(240,20,20)!important;
     }
 </style>
 <script>
