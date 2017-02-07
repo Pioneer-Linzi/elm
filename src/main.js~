@@ -5,7 +5,7 @@ import VueResource from 'vue-resource';
 import Router from 'vue-router';
 
 Vue.use(Router);
-Vue.use(VueResource);
+Vue.use(VueResource)
 var router = new Router({
 	linkActiveClass: 'active'
 });
