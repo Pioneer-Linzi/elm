@@ -22,7 +22,7 @@
 		left:0px;
 		content:' ';
 		webkit-transform:scaleY(0.7);
-		transform:scaleY(0.7);
+		transform:scaleY(11);
 	}
 	.tab .tab-item {
 		flex: 1;
