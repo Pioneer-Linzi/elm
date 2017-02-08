@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<ele-header></ele-header>
+		<ele-header :seller="seller"></ele-header>
 		<tab></tab>
 		<router-view></router-view>
 	</div>
@@ -41,5 +41,8 @@ export default {
 	#app {
 		width: 100%;
 		height: 100%;
+	}
+	body{
+		margin:0px;
 	}
 </style>
