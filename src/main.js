@@ -3,6 +3,7 @@ import App from './App';
 import routerConfing from 'components/router';
 import VueResource from 'vue-resource';
 import Router from 'vue-router';
+import 'common/stylus/index.styl';
 
 Vue.use(Router);
 Vue.use(VueResource);

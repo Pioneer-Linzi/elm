@@ -1,0 +1,11 @@
+border-1px($color)
+  position:relative
+  &:after
+    position:absolute
+    display:block
+    left:0
+    bottom:0
+    width:100%
+    border-top:1px solid $color
+    transform
+    content: ' '
