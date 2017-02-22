@@ -15,9 +15,9 @@
 				<div class="description">
 					{{seller.description}}/{{seller.deliveryTime}}分钟送达
 				</div>
-				<div v-if="seller.supports" class="support">
+				<div v-if="seller-supports" class="support">
 					<span class="icon"></span>
-					<span class="text">{{seller.supports[0].description}}</span>
+					<span class="text"></span>
 				</div>
 			</div>
 		</div>
@@ -25,26 +25,10 @@
 		</div>
 	</div>
 </template>
-<style>
-	.header{
-		color:#fff;
-		background:#000;
-	}
-	.header .content-wrapper{
-		padding:24px 12px 18px 24px;
-	}
-
-	.content-wrapper .avatar{
-		display:inline-block;
-	}
-	.content{
-		display:inline-block;
-		font-size:14px;
-		margin-left:14px;
-	}
+<style lang="stylus" rel="stylesheet/stylus">
 
 </style>
-<script>
+<script type="text-ecmascript-6">
 	export default {
 		props: {
 			seller: {

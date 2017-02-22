@@ -3,8 +3,8 @@
     this is seller panel
     </div>
 </template>
-<style scoped>
+<style scoped lang="stylus" rel="stylesheet/stylus">
 </style>
-<script>
+<script type="text-ecmascript-6">
     export default {};
 </script>

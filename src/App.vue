@@ -6,7 +6,7 @@
 	</div>
 </template>
 
-<script>
+<script type="text-ecmascript-6">
 import header from './components/header/Header';
 import tab from './components/tab/Tab';
 import content from './components/content/Content';
@@ -33,7 +33,12 @@ export default {
 	}
 };
 </script>
-<style>
+<style lang="stylu" rel="stylesheet/stylus">
+	body,html{
+		line-height:1;
+		font-weight:200;
+		font-family: 'PingFang SC','STHeitiSC-Light','Helvetical-Light'
+	}
 	html {
 		height: 100%;
 	}

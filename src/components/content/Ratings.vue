@@ -3,11 +3,11 @@
     this is ratings
     </div>
 </template>
-<style scoped>
+<style scoped lang="stylus" rel="stylesheet/stylus">
 .ratings{
 
 }
 </style>
-<script>
+<script type="text-ecmascript-6">
     export default {};
 </script>

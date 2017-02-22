@@ -3,10 +3,10 @@
     this space is content
    </div> 
 </template>
-<style>
+<style lang="stylus" rel="stylesheet/stylus">
 
 </style>
-<script>
+<script type="text-ecmascript-6">
     export default {};
 </script>
 

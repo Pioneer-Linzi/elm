@@ -5,7 +5,7 @@
 		<div class="tab-item"><a v-link="{path: '/seller',activeClass:'active'}">商家</a></div>
 	</div>
 </template>
-<style >
+<style lang="stylus" rel="stylesheet/stylus">
 	.tab {
 		display: flex;
 		position:relative;
@@ -39,6 +39,6 @@
 		color:rgb(240,20,20)!important;
 	}
 </style>
-<script>
+<script type="text-ecmascript-6">
 	export default {};
 </script>
