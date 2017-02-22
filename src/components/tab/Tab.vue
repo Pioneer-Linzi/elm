@@ -16,7 +16,7 @@
             height: 40px
             line-height: 40px
             vertical-align:middle
-            :after
+            &:after
                 position:absolute;
                 width:100%;
                 border-bottom:1px solid rgba(7,17,27,0.1);
