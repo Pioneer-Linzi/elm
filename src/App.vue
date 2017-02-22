@@ -33,7 +33,7 @@ export default {
 	}
 };
 </script>
-<style lang="stylu" rel="stylesheet/stylus">
+<style lang="stylus" rel="stylesheet/stylus">
 	body,html{
 		line-height:1;
 		font-weight:200;
