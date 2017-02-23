@@ -2,7 +2,7 @@
 	<div class=header>
 		<div class="content-wrapper">
 			<div class="avatar">
-				<img :src="seller.avatar" width="64px" height="64px" alt="" />
+				<img :src="seller.avatar" width="64" height="64" alt="" />
 			</div>
 			<div class="content">
 				<div class="title">
@@ -15,9 +15,9 @@
 				<div class="description">
 					{{seller.description}}/{{seller.deliveryTime}}分钟送达
 				</div>
-				<div v-if="seller-supports" class="support">
+				<div v-if="seller.supports" class="support">
 					<span class="icon"></span>
-					<span class="text"></span>
+					<span class="text">{{seller.supports[0].description}}</span>
 				</div>
 			</div>
 		</div>
@@ -32,7 +32,8 @@
 	export default {
 		props: {
 			seller: {
-				type: Object}
+				type: Object
+				}
 		}
 	};
 </script>
