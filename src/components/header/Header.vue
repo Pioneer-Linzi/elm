@@ -26,6 +26,18 @@
 	</div>
 </template>
 <style lang="stylus" rel="stylesheet/stylus">
+	.header
+		color:#fff;
+		background:#000;
+		.content-wrapper
+			padding: 24px 12px 18px 24px
+            font-size:0
+			.avatar
+				display:inline-block
+			.content
+				display: inline-block
+				margin-left:16px
+				font-size:14px
 
 </style>
 <script type="text-ecmascript-6">
