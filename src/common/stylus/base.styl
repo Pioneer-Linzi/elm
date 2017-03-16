@@ -8,3 +8,15 @@
     &::after
       -webkit-transform :scaleY(0.5)
       transform :scaleY(0.5)
+
+.clearfix
+  display:inline-block
+  &:after
+    display: block
+    content: "."
+    height:0
+    line-height: 0
+    clear:botn
+    visibility: hidden
+
+
