@@ -43,6 +43,11 @@
             <div class="text">优惠信息</div>
             <div class="line"></div>
           </div>
+          <ul v-if="seller.supports" class="supports">
+            <li class="support-item" v-for="item in seller.supports"></li>
+            <span class="icon" :class="classMap[seller.supports[$index].type]"></span>
+            <span class="text">{{seller.suports[$index].description}}</span>
+          </ul>
         </div>
       </div>
       <div class="detail-close">
