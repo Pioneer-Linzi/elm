@@ -32,7 +32,7 @@
 		<div class="background">
 			<img :src="seller.avatar" width="100%" height='100%' ; alt="">
 		</div>
-		<div v-show="detailShow" class="detail">
+		<div v-show="detailShow" class="detail" transition="fade">
 			<div class="detail-wrapper clearfix">
 				<div class="detail-main">
 					<h1 class="name">{{seller.name}}</h1>
@@ -48,9 +48,17 @@
 							<span class="text">{{seller.supports[$index].description}}</span>
 						</li>
 					</ul>
+					<div class="title">
+						<div class="line"></div>
+						<div class="text">商家公告</div>
+						<div class="line"></div>
+					</div>
+					<div class="bulletin">
+						<p class="content">{{seller.bulletin}}</p>
+					</div>
 				</div>
 			</div>
-			<div class="detail-close">
+			<div class="detail-close" @click="hideDetail">
 				<i class="icon-close"></i>
 			</div>
 		</div>
@@ -176,7 +184,13 @@
 			width: 100%
 			height: 100%
 			overflow: auto
-			background: rgba(7, 17, 27, 0.8)
+			transition:all 0.5s
+			&.fade-transition
+				opacity:1
+				background: rgba(7, 17, 27, 0.8)
+			&.fade-enter, &.fade-leave
+				opacity:0
+				background: rgba(7, 17, 27, 0)
 			.detail-wrapper
 				min-height: 100%
 				width: 100%
@@ -205,6 +219,44 @@
 							font-weight 700
 							padding:0 12px
 							font-size: 12px
+					.supports
+						width:80%
+						margin: 0 auto
+						.support-item
+							padding:0 12px
+							margin-bottom:12px
+							font-size:0
+							&:last-child
+								margin-bottom:0
+							.icon
+								display:inline-block
+								width:16px
+								height:16px
+								vertical-align:top
+								margin-right:6px
+								background-size:16px 16px
+								background-repeat:no-repeat
+								&.decrease
+									bg-image('decrease_1')
+								&.discount
+									bg-image('discount_1')
+								&.guarantee
+									bg-image('guarantee_1')
+								&.invoice
+									bg-image('invoice_1')
+								&.special
+									bg-image('special_1')
+							.text
+								line-height:16px
+								font-size:12px
+					.bulletin
+						width:80%
+						margin:0 auto
+						.content
+							padding:0 12px
+							line-height:12px
+							font-size:12px
+
 		.detail-close
 			position: relative
 			width: 32px
@@ -224,6 +276,9 @@ export default {
 	methods: {
 		showDetail () {
 			this.detailShow = true;
+		},
+		hideDetail () {
+			this.detailShow = false;
 		}
 	},
 	props: {
